@@ -7,6 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="resources\odc-sftp.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="resources\odc-sftp.png" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.4.0" />
         <PackageReference Include="SSH.NET" Version="2023.0.0" />
     </ItemGroup>

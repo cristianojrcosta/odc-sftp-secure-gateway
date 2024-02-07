@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vQdHj0pVrzRKwAo6Y6uvoAM1mPMeXch2moUxtqObRBsY7fLWRLevls1eV81mg326SW+cHkTBro5xZLByv0yQew==",
+  "dgSpecHash": "ED0UfC8oHNVxfNPzcj7oQFYkkHg2bsHmbOdtSOQsDVaGRWwyk4YMFa2NC5y+sR2yefnrKu+toSTFrdAYq/utHw==",
   "success": true,
-  "projectFilePath": "C:\\Repo\\odc-sftp\\DoiTLean.SFTP.UnitTests\\DoiTLean.SFTP.UnitTests.csproj",
+  "projectFilePath": "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP.UnitTests\\DoiTLean.SFTP.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fabio.fantato\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\fabio.fantato\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

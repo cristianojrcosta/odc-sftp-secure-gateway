@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoiTLean.SFTP.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2801cb48726fc25a569fa50a52eccfd1e6282892")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoiTLean.SFTP.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoiTLean.SFTP.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

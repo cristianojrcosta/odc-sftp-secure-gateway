@@ -5797,11 +5797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repo\\odc-sftp\\DoiTLean.SFTP.UnitTests\\DoiTLean.SFTP.UnitTests.csproj",
+      "projectUniqueName": "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP.UnitTests\\DoiTLean.SFTP.UnitTests.csproj",
       "projectName": "DoiTLean.SFTP.UnitTests",
-      "projectPath": "C:\\Repo\\odc-sftp\\DoiTLean.SFTP.UnitTests\\DoiTLean.SFTP.UnitTests.csproj",
+      "projectPath": "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP.UnitTests\\DoiTLean.SFTP.UnitTests.csproj",
       "packagesPath": "C:\\Users\\fabio.fantato\\.nuget\\packages\\",
-      "outputPath": "C:\\Repo\\odc-sftp\\DoiTLean.SFTP.UnitTests\\obj\\",
+      "outputPath": "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fabio.fantato\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5818,8 +5818,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Repo\\odc-sftp\\DoiTLean.SFTP\\DoiTLean.SFTP.csproj": {
-              "projectPath": "C:\\Repo\\odc-sftp\\DoiTLean.SFTP\\DoiTLean.SFTP.csproj"
+            "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP\\DoiTLean.SFTP.csproj": {
+              "projectPath": "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP\\DoiTLean.SFTP.csproj"
             }
           }
         }
@@ -5871,7 +5871,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

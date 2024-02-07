@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HWwdlvRghuKklGzXbmdGJwh5FS+0ausHzaxj7Wn2JL4ia1+abCFN1QUGq7gaqkzmAfVbPnGwKc7bDL1LIRkJgA==",
+  "dgSpecHash": "NX2ALXFSDxDNsJRrSX+xnNn0O3i8+bDclqZVFH153ddd0DwxF5M6+5U+YZjGRdFPAaZKWOsuMKzQWK3ktQGITQ==",
   "success": true,
-  "projectFilePath": "C:\\Repo\\odc-sftp\\DoiTLean.SFTP\\DoiTLean.SFTP.csproj",
+  "projectFilePath": "C:\\Repo\\odc-sftp\\odc-sftp\\DoiTLean.SFTP\\DoiTLean.SFTP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fabio.fantato\\.nuget\\packages\\outsystems.externallibraries.sdk\\1.4.0\\outsystems.externallibraries.sdk.1.4.0.nupkg.sha512",
     "C:\\Users\\fabio.fantato\\.nuget\\packages\\ssh.net\\2023.0.0\\ssh.net.2023.0.0.nupkg.sha512",
