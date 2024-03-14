@@ -183,7 +183,7 @@ namespace DoiTLean.SFTP {
                             rec.ssCreated = file.LastAccessTime;
                             rec.ssModified = file.LastWriteTime;
 
-                            List.Append(rec);
+                            List.Add(rec);
 
                             idx++;
                         }
@@ -603,7 +603,7 @@ namespace DoiTLean.SFTP {
                         rec.ssCreated = file.LastAccessTime;
                         rec.ssModified = file.LastWriteTime;
 
-                        List.Append(rec);
+                        List.Add(rec);
 
                         idx++;
                     }
