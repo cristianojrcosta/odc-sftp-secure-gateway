@@ -1,0 +1,5 @@
+C:\Users\ctc\Source\Repos\odc-sftp-secure-gateway\DoiTLean.SFTP\bin\Release\net8.0\linux-x64\publish\DoiTLean.SFTP.dll
+C:\Users\ctc\Source\Repos\odc-sftp-secure-gateway\DoiTLean.SFTP\bin\Release\net8.0\linux-x64\publish\DoiTLean.SFTP.deps.json
+C:\Users\ctc\Source\Repos\odc-sftp-secure-gateway\DoiTLean.SFTP\bin\Release\net8.0\linux-x64\publish\DoiTLean.SFTP.pdb
+C:\Users\ctc\Source\Repos\odc-sftp-secure-gateway\DoiTLean.SFTP\bin\Release\net8.0\linux-x64\publish\OutSystems.ExternalLibraries.SDK.dll
+C:\Users\ctc\Source\Repos\odc-sftp-secure-gateway\DoiTLean.SFTP\bin\Release\net8.0\linux-x64\publish\Renci.SshNet.dll

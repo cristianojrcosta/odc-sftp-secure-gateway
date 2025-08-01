@@ -7,7 +7,7 @@ namespace DoiTLean.SFTP
     /// <summary>
     /// H File Transfer Protocol (SFTP) that you can use in your applications
     /// </summary>
-    [OSInterface(Description = "SSH File Transfer Protocol (SFTP) that you can use in your applications",IconResourceName = "DoiTLean.SFTP.resources.odc-sftp.png", Name = "SFTP")]
+    [OSInterface(Description = "SSH File Transfer Protocol (SFTP) that you can use in your applications with Secure-Gateway Compatibility", IconResourceName = "DoiTLean.SFTP.resources.odc-sftp.png", Name = "SFTPonStereoids")]
     public interface ISFTP
     {
 

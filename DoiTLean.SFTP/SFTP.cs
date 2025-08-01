@@ -22,6 +22,11 @@ namespace DoiTLean.SFTP {
         /// <param name="Path"></param>
         public void Delete_PrivateKey(string IP, int Port, string Username, byte[] PrivateKey, string Path)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -57,7 +62,11 @@ namespace DoiTLean.SFTP {
         public void Exists_PrivateKey(string IP, int Port, string Username, byte[] PrivateKey, string Path, out bool Exists)
         {
             Exists = false;
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -95,7 +104,11 @@ namespace DoiTLean.SFTP {
             // Download to a temp file
             Data = new byte[] { };
             string localFile = System.IO.Path.GetTempFileName();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -159,7 +172,11 @@ namespace DoiTLean.SFTP {
         {
             List = new List<RemoteItem>();
             RemoteItem rec = new RemoteItem();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -210,6 +227,11 @@ namespace DoiTLean.SFTP {
         /// <param name="Path"></param>
         public void Mkdir_PrivateKey(string IP, int Port, string Username, byte[] PrivateKey, string Path)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -244,6 +266,11 @@ namespace DoiTLean.SFTP {
         /// <param name="Target"></param>
         public void Move_PrivateKey(string IP, int Port, string Username, byte[] PrivateKey, string Source, string Target)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -284,7 +311,11 @@ namespace DoiTLean.SFTP {
             BinaryWriter bw = new BinaryWriter(fs);
             bw.Write(Data);
             bw.Close();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -323,6 +354,11 @@ namespace DoiTLean.SFTP {
         /// <param name="Path"></param>
         public void Rmdir_PrivateKey(string IP, int Port, string Username, byte[] PrivateKey, string Path)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -359,7 +395,11 @@ namespace DoiTLean.SFTP {
         public void Search_PrivateKey(string IP, int Port, string Username, byte[] PrivateKey, string Path, string FileName, out RemoteItem File)
         {
             File = new RemoteItem();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (Stream s = new MemoryStream(PrivateKey))
             {
                 var keyFile = new PrivateKeyFile(s);
@@ -409,7 +449,11 @@ namespace DoiTLean.SFTP {
         public void Exists(string IP, int Port, string Username, string Paword, string Path, out bool Exists)
         {
             Exists = false;
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -442,7 +486,11 @@ namespace DoiTLean.SFTP {
         public void Search(string IP, int Port, string Username, string Paword, string Path, string FileName, out RemoteItem File)
         {
             File = new RemoteItem();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -485,6 +533,11 @@ namespace DoiTLean.SFTP {
         /// <param name="Path"></param>
         public void Rmdir(string IP, int Port, string Username, string Paword, string Path)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -514,6 +567,11 @@ namespace DoiTLean.SFTP {
         /// <param name="Path"></param>
         public void Mkdir(string IP, int Port, string Username, string Paword, string Path)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -534,6 +592,11 @@ namespace DoiTLean.SFTP {
 
         public void Delete(string IP, int Port, string Username, string Paword, string Path)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -554,6 +617,11 @@ namespace DoiTLean.SFTP {
 
         public void Move(string IP, int Port, string Username, string Paword, string Source, string Target)
         {
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -583,7 +651,11 @@ namespace DoiTLean.SFTP {
         {
             List = new List<RemoteItem>();
             RemoteItem rec = new RemoteItem();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
@@ -633,7 +705,11 @@ namespace DoiTLean.SFTP {
             BinaryWriter bw = new BinaryWriter(s);
             bw.Write(Data);
             bw.Close();
-
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
             // Upload the temp file
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
@@ -664,18 +740,25 @@ namespace DoiTLean.SFTP {
             Data = new byte[] { };
             string localFile = System.IO.Path.GetTempFileName();
 
+            if (IP.Contains("secure-gateway"))
+            {
+                string secureGatewayBaseURL = Environment.GetEnvironmentVariable("SECURE_GATEWAY");
+                IP = IP.Replace("secure-gateway", secureGatewayBaseURL);
+            }
+
             using (var sftp = new SftpClient(IP, Port, Username, Paword))
             {
                 try
                 {
                     sftp.Connect();
-                    var file = new FileStream(localFile, FileMode.Create);
-                    sftp.DownloadFile(Path, file);
-                    file.Close();
+                    using (var file = new FileStream(localFile, FileMode.Create))
+                    {
+                        sftp.DownloadFile(Path, file);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    throw ex;
+                    throw;
                 }
                 finally
                 {
